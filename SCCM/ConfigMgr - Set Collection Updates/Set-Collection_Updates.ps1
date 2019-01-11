@@ -17,7 +17,7 @@ Sets the collection refresh type for all collections defined in a text file.
 .NOTES
 Author: Daniel Classon
 Version: 1.0
-Date: 2015/05/18
+Date: 2015/05/17
     
 .EXAMPLE
 .\Set-Collection_Updates.ps1 -CollectionType Device -RefreshType 2
@@ -28,7 +28,14 @@ All scripts and other powershell references are offered AS IS with no warranty.
 These script and functions are tested in my environment and it is recommended that you test these scripts in a test environment before using in your production environment.
 #>
 
-[CmdletBinding()]Param(    [Parameter(Mandatory=$True, Helpmessage="Enter the Collection Type")]    [string]$CollectionType,    [Parameter(Mandatory=$True, Helpmessage="Enter the Refresh Type")]    [string]$RefreshType)
+[CmdletBinding()]
+
+Param(
+    [Parameter(Mandatory=$True, Helpmessage="Enter the Collection Type")]
+    [string]$CollectionType,
+    [Parameter(Mandatory=$True, Helpmessage="Enter the Refresh Type")]
+    [string]$RefreshType
+)
 
 Begin {
     #Checks if the user is in the administrator group. Warns and stops if the user is not.
