@@ -1,0 +1,7 @@
+<SMS_Roles>
+  <SMS_Role CopiedFromID="SMS000ER" RoleName="Maintenance Window Admin" RoleDescription="">
+    <Operations>
+      <Operation GrantedOperations="2101249" ObjectTypeID="1" />
+    </Operations>
+  </SMS_Role>
+</SMS_Roles>
